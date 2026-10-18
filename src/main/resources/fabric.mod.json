@@ -4,12 +4,10 @@
   "id": "justtouch",
   "version": "${version}",
   "name": "Just Touch",
-  "description": "A client-side touchscreen control mod for Minecraft Java Edition, designed for touch devices and compatible launchers.",
-  "authors": [
-    "GamerOfPro"
-  ],
+  "description": "Touchscreen compatibility helper for Minecraft Java Edition.",
+  "authors": ["GamerOfPro"],
   "contact": {
-    "sources": "https://github.com/gamerofpro/just-touch"
+    "sources": "https://github.com/jimj90201-a11y/Just-touch"
   },
   "license": "MIT",
   "icon": "assets/justtouch/icon.png",
@@ -22,13 +20,6 @@
       "gamerofpro.justtouch.client.JustTouchDataGenerator"
     ]
   },
-  "mixins": [
-    "justtouch.mixins.json",
-    {
-      "config": "justtouch.client.mixins.json",
-      "environment": "client"
-    }
-  ],
   "depends": {
     "fabricloader": ">=0.19.5",
     "minecraft": "~1.21.1",
