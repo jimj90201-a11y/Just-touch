@@ -1,41 +1,38 @@
+
 {
-	"schemaVersion": 1,
-	"id": "justtouch",
-	"version": "${version}",
-	"name": "just touch",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/justtouch/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"gamerofpro.justtouch.JustTouch"
-		],
-		"client": [
-			"gamerofpro.justtouch.client.JustTouchClient"
-		],
-		"fabric-datagen": [
-			"gamerofpro.justtouch.client.JustTouchDataGenerator"
-		]
-	},
-	"mixins": [
-		"justtouch.mixins.json",
-		{
-			"config": "justtouch.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.5",
-		"minecraft": "~1.21.1",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "justtouch",
+  "version": "${version}",
+  "name": "Just Touch",
+  "description": "A client-side touchscreen control mod for Minecraft Java Edition, designed for touch devices and compatible launchers.",
+  "authors": [
+    "GamerOfPro"
+  ],
+  "contact": {
+    "sources": "https://github.com/gamerofpro/just-touch"
+  },
+  "license": "MIT",
+  "icon": "assets/justtouch/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "gamerofpro.justtouch.client.JustTouchClient"
+    ],
+    "fabric-datagen": [
+      "gamerofpro.justtouch.client.JustTouchDataGenerator"
+    ]
+  },
+  "mixins": [
+    "justtouch.mixins.json",
+    {
+      "config": "justtouch.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
