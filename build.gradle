@@ -4,11 +4,11 @@ plugins {
     id 'maven-publish'
 }
 
-group = project.maven_group
-version = project.mod_version
+group = "gamerofpro.justtouch"
+version = project.findProperty("version") ?: "1.0.0"
 
 base {
-    archivesName = project.archives_base_name
+    archivesName = "justtouch"
 }
 
 loom {
@@ -58,7 +58,7 @@ java {
 
 tasks.named("jar", Jar).configure {
     from("LICENSE") {
-        rename { "${it}_${project.archives_base_name}" }
+        rename { "${it}_justtouch" }
     }
 }
 
